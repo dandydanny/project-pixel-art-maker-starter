@@ -19,3 +19,8 @@ function makeGrid() {
 // ???
 
 // Profit! I think...
+
+$('#sizePicker').on('submit', function(){
+	console.log('clicked');
+	return false;	// preventDefault and stopPropagation
+})
