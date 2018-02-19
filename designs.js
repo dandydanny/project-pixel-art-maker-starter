@@ -8,3 +8,14 @@ function makeGrid() {
 // Your code goes here!
 
 }
+
+
+// After submit, prevent default, but grab dimension value
+
+// Call makeGrid with dimension value, which populates DOM with DIV's
+
+// Use jQuery to .toggleClass .on('click')
+
+// ???
+
+// Profit! I think...
