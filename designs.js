@@ -9,7 +9,7 @@ function makeGrid(x,y) {
 
 }
 
-
+var color;
 // After submit, prevent default, but grab dimension value
 
 // Call makeGrid with dimension value, which populates DOM with DIV's
@@ -23,9 +23,10 @@ function makeGrid(x,y) {
 
 $('#sizePicker').on('submit', function(){
 	var x, y;
+	color = $('#colorPicker').val();
 	y = $('#inputHeight').val();
 	x = $('#inputWidth').val();
-	console.log('clicked - xy values: ' + x + ', ' + y);
+	console.log('Clicked - vaues: ' + x + ', ' + y + ', ' + color);
 	makeGrid(x,y);
 	return false;	// preventDefault and stopPropagation
 })
