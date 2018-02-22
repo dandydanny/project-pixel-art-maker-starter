@@ -22,7 +22,10 @@ function makeGrid(x,y) {
 // Profit! I think...
 
 $('#sizePicker').on('submit', function(){
-	console.log('clicked');
-	makeGrid(1,2);
+	var x, y;
+	y = $('#inputHeight').val();
+	x = $('#inputWidth').val();
+	console.log('clicked - xy values: ' + x + ', ' + y);
+	makeGrid(x,y);
 	return false;	// preventDefault and stopPropagation
 })
