@@ -3,9 +3,9 @@
 
 // When size is submitted by the user, call makeGrid()
 
-function makeGrid() {
+function makeGrid(x,y) {
 
-// Your code goes here!
+	console.log("makeGridc called with arguments:" + x + " " + y);
 
 }
 
@@ -23,5 +23,6 @@ function makeGrid() {
 
 $('#sizePicker').on('submit', function(){
 	console.log('clicked');
+	makeGrid(1,2);
 	return false;	// preventDefault and stopPropagation
 })
