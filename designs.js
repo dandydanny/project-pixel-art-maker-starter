@@ -6,6 +6,13 @@
 function makeGrid(x,y) {
 
 	console.log("makeGridc called with arguments:" + x + " " + y);
+	for(var rows = 0; rows < y; rows++){
+		console.log('make rows');
+		for(var cols = 0; cols < x; cols++){
+			console.log('make cols');
+		}
+	}
+
 
 }
 
