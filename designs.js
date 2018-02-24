@@ -4,20 +4,16 @@
 // When size is submitted by the user, call makeGrid()
 
 function makeGrid(x,y) {
-
 	console.log("makeGridc called with arguments:" + x + " " + y);
 	for(var rows = 0; rows < y; rows++){
 		console.log('make rows');
 		$('#pixelCanvas').append('<tr class="pixelRow"></tr>');	
 	}
-
 	for(var cols = 0; cols < x; cols++){
 		console.log('make cols');
 		// append td all tr at once
 		$('.pixelRow').append('<td class="pixel"></td>');
 	}
-
-
 }
 
 var color;
@@ -41,3 +37,18 @@ $('#sizePicker').on('submit', function(){
 	makeGrid(x,y);
 	return false;	// preventDefault and stopPropagation
 })
+
+// This will only work on elements as loaded,
+// not on elements added to DOM afterwards
+// $('.pixel').click(function(){
+// 	console.log('pixel clicked');
+// 	$(this).toggleClass( "on" );
+// })
+
+// jQuery event delegation:
+// Tells jQuery to watch the table element for clicks,
+// and then if there are any, check if the click event's target is a pixel.
+$( 'table' ).on( 'click', '.pixel', function() {
+	console.log('pixel clicked');
+	$(this).toggleClass( "on" );
+});
