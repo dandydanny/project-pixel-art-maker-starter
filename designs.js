@@ -8,9 +8,13 @@ function makeGrid(x,y) {
 	console.log("makeGridc called with arguments:" + x + " " + y);
 	for(var rows = 0; rows < y; rows++){
 		console.log('make rows');
-		for(var cols = 0; cols < x; cols++){
-			console.log('make cols');
-		}
+		$('#pixelCanvas').append('<tr class="pixelRow"></tr>');	
+	}
+
+	for(var cols = 0; cols < x; cols++){
+		console.log('make cols');
+		// append td all tr at once
+		$('.pixelRow').append('<td class="pixel"></td>');
 	}
 
 
