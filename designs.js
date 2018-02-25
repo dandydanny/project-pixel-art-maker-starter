@@ -23,6 +23,7 @@ var color;
 // Use jQuery to .toggleClass .on('click')
 // Color handling: a set of pre-defined color palettes that can be changed, or
 // dynamically push new color into array, and set class to point to location in array (which holds color value) 
+// bonus: ability to cycle the colors in array in a circular fashion
 // ???
 
 // Profit! I think...
