@@ -1,4 +1,5 @@
 # Pixel Art Maker Project
+![Screenshot](https://github.com/dandydanny/project-pixel-art-maker-starter/blob/master/pixel-art-maker-screenshot.gif)
 
 ## Table of Contents
 
