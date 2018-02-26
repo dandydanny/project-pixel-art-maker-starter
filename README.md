@@ -14,3 +14,5 @@ To practice making things with newly learned JavaScript, jQuery, and DOM manipul
 To get started, open `designs.js` and start building out the app's functionality.
 
 For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+
+Update 2018-02-25: This repo is being deprecated; please see https://github.com/dandydanny/pixelartmaker for most current changes.
